@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "skill-orchestrator",
+  "version": "0.2.1",
+  "description": "ChatGPT + Codex skill discovery and multi-skill execution with approval gates, seven-day GitHub caching, task audits and MCP tools.",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "Skill Orchestrator",
+        "shortDescription": "Find, activate and audit task-specific skills",
+        "longDescription": "Cross-platform skill coordination using an MCP server for ChatGPT and optional trusted local Codex hooks. GitHub discoveries require approval.",
+        "developerName": "Local User",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ]
+      },
+      "onboardingSkill": "./skills/setup/SKILL.md"
+    }
+  }
+}

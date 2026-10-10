@@ -1,0 +1,12 @@
+{
+  "name": "skill-orchestrator",
+  "version": "0.2.1",
+  "description": "Locally managed skill discovery and task activation auditing.",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Skill Orchestrator",
+    "shortDescription": "GitHub discovery, activation and approvals",
+    "category": "Productivity"
+  }
+}
